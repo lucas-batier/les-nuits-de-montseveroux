@@ -1,0 +1,27 @@
+/* ... (previous styles) ... */
+
+#lineup-scroll {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.scroll-container {
+  overflow: hidden;
+}
+
+.scrolling-text > :first-child{
+  white-space: nowrap;
+  animation: scrollText 30s linear infinite;
+  display: inline-block; /* Ensure the span elements stay in a single line */
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ... (remaining styles) ... */
