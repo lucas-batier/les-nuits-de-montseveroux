@@ -1,0 +1,60 @@
+#mobile-view header {
+    display: flex;
+}
+
+#mobile-view header * {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+}
+
+#mobile-view header #burger-menu {
+    padding: 24px;
+}
+
+#mobile-view header #header-button {
+    flex: 1;
+    padding: 24px 12px;
+}
+
+#mobile-view #hero {
+    display: flex;
+    align-items: flex-end;
+    min-height: 640px;
+    height: 80vh;
+}
+
+#mobile-view #hero * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#mobile-view #hero #hero-side {
+    flex: 1;
+    flex-direction: column;
+    height: 100%;
+}
+
+#mobile-view #hero #hero-picture {
+    height: 100%;
+    width: 25vw;
+}
+
+#mobile-view #hero #hero-side * {
+    width: 100%;
+    padding: 24px;
+}
+
+#mobile-view #hero #hero-side #hero-title {
+    flex: 1;
+    flex-direction: column;
+    height: 100%;
+}
+
+#mobile-view #hero #hero-side #hero-title #hero-logo {
+    flex: 1;
+    height: 100%;
+}

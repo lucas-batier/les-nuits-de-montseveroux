@@ -1,124 +1,58 @@
 html, body {
+    --black: #060500;
+    --white: #f7fdff;
+    --primary-main: #f5bb05;
+    --primary-contrast-text: #060500;
+    --secondary-main: #1b3742;
+    --secondary-contrast-text: #f7fdff;
+
     padding: 0;
     margin: 0;
-
-    --speed: 90s;
-    --main-color: #f5bb05;
+    width: 100vw;
+    background-color: var(--primary-main);
 }
 
-section {
-    padding: 32px 32px;
+h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--white);
+    text-shadow: 3px 3px 0 var(--black);
+    position: relative;
+}
+
+h1:after {
+    content: attr(data-text);
+
+    position: absolute;
+    left: 0;
+    z-index: -1;
+
+    -webkit-text-stroke: 4px var(--black);
+
+    font-size: 1em;
+}
+
+button {
+    cursor: pointer;
+    background: none;
 }
 
 header {
     position: sticky;
-    top: 0;
-    padding: 32px 80px;
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--main-color);
 }
 
-header #navigation {
-    display: flex;
-    gap: 32px;
-    align-items: baseline;
-}
-
-header #navigation nav {
-    display: flex;
-    gap: 32px;
-    align-items: baseline;
-}
-
-
-#hero {
-    height: 80vh;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
-
-
-#lineup-scroll {
-    padding: 80px 0;
-    background-color: var(--main-color);
-}
-
-.scroll-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    white-space: nowrap;
-    overflow: hidden;
+.border {
     box-sizing: border-box;
+    border: 1px solid var(--black);
 }
 
-.scroll-text {
-    margin: auto;
-    display: inline-block;
-    width: 100%;
+#hero #hero-side #hero-date {
+    color: var(--secondary-contrast-text);
+    background-color: var(--secondary-main);
 }
 
-.scroll-text div {
-    position: absolute;
-    transform: translateY(-50%);
-    min-width: 100%;
-}
-
-.scroll-text div span {
-    left: 0;
-}
-
-.scroll-text div span:first-child {
-    animation: scroll-first var(--speed) infinite linear;
-}
-
-.scroll-text div span:last-child {
-    position: absolute;
-    animation: scroll-last var(--speed) infinite linear;
-}
-
-@keyframes scroll-first {
-    0% {
-        margin-left: 0;
-    }
-    100% {
-        margin-left: -100%;
-    }
-}
-
-@keyframes scroll-last {
-    0% {
-        margin-left: 100%;
-    }
-    100% {
-        margin-left: 0;
-    }
-}
-
-
-#lineup-caroussel {
-
-}
-
-
-footer {
-    padding: 32px 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-footer #copyright {
-    position: absolute;
-    margin: 0;
-    text-align: center;
-    flex: 1;
-    left: 50%;
-    transform: translateX(-50%);
+#hero #hero-side #hero-location {
+    color: var(--secondary-contrast-text);
+    background-color: var(--secondary-main);
 }

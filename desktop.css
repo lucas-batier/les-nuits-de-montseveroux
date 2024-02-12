@@ -1,0 +1,73 @@
+#desktop-view h1:hover {
+    text-shadow: 4px 4px 0 var(--black);
+    transform: translate(-2px, -2px);
+}
+
+#desktop-view h1:active {
+    text-shadow: none;
+    transform: none;
+}
+
+#desktop-view header {
+    display: flex;
+    align-items: center;
+    height: 128px;
+}
+
+#desktop-view header * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+#desktop-view header #header-logo {
+    flex: 1;
+}
+
+#desktop-view header nav a {
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+#desktop-view header #header-button {
+    width: 19vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+#desktop-view #hero {
+    display: flex;
+    align-items: center;
+    min-height: 640px;
+    height: 80vh;
+}
+
+#desktop-view #hero * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#desktop-view #hero #hero-picture {
+    flex: 1;
+    height: 100%;
+}
+
+#desktop-view #hero #hero-side {
+    flex-direction: column;
+    height: 100%;
+    width: 19vw;
+}
+
+#desktop-view #hero #hero-side * {
+    width: 100%;
+    padding: 2vw;
+}
+
+#desktop-view #hero #hero-side #hero-logo {
+    flex: 1;
+    height: 100%;
+}

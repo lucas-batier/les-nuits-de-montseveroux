@@ -2,75 +2,83 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <style>
+        /* Desktop styles */
+        @media screen and (min-width: 769px) {
+            #mobile-view {
+                display: none;
+            }
+
+            #desktop-view {
+                display: block;
+            }
+        }
+
+        /* Mobile styles */
+        @media screen and (max-width: 768px) {
+            #mobile-view {
+                display: block;
+            }
+
+            #desktop-view {
+                display: none;
+            }
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css">
-    <title>Festival Nuits de Montseveroux - {Date}</title>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="desktop.css">
+    <title>Les Nuits de Montseveroux | 10 au 15 Juillet 2024</title>
 </head>
 <body>
-
-<header>
-    <div class="logo">Your Logo</div>
-    <div id="navigation">
-        <nav>
-            <a href="#lineup-scroll">Groupes</a>
-            <a href="#host">Héberger</a>
-            <a href="#activities">Festival</a>
-            <a href="#news">Actualités</a>
-        </nav>
-        <button class="primary-button">Réserver maintenant</button>
-    </div>
-</header>
-
-<section id="hero">
-    <!-- Background image here -->
-    <h1>Festival des Nuits de Montseveroux</h1>
-    <p>Festival de danses et musiques du Monde</p>
-    <button class="primary-button">Réserver maintenant</button>
-</section>
-
-<section id="lineup-scroll">
-    <div class="scroll-container">
-        <div class="scroll-text">
-            <div>
-                <span>Mongolie - Pérou - Pologne - Nice (France) -&nbsp;</span>  <!-- @todo replace by list dynamic -->
+<div id="mobile-view">
+    <header>
+        <button id="burger-menu" class="border">
+            <img src="icons/burger-menu.svg" alt="Burger menu icon">
+        </button>
+        <button id="header-button" class="border">
+            <h1 data-text="Réserver maintenant">Réserver maintenant</h1>
+        </button>
+    </header>
+    <section id="hero">
+        <div id="hero-side">
+            <div id="hero-title" class="border">
+                <div id="hero-logo">LOGO</div>
+                <div id="hero-tagline">Festival de danses et musiques du Monde</div>
+            </div>
+            <div id="hero-date" class="border">
+                <h2 data-text="10 au 15 Juillet">10 au 15 Juillet</h2>
+            </div>
+            <div id="hero-location" class="border">
+                <h2 data-text="Château de Montseveroux">Château de Montseveroux</h2>
             </div>
         </div>
-    </div>
-</section>
+        <div id="hero-picture" class="border"></div>
+    </section>
+</div>
 
-<!-- Lineup Carousel Section -->
-<section id="lineup-caroussel">
-    <!-- Add your carousel code here -->
-</section>
-
-<!-- Host the Artist Section -->
-<section id="host">
-    <!-- Host the Artist content here -->
-</section>
-
-<!-- Festival Activities Section -->
-<section id="activities">
-    <!-- Festival Activities content here -->
-</section>
-
-<!-- News Section -->
-<section id="news">
-    <!-- News content here -->
-</section>
-
-<!-- Partners Section -->
-<section id="partners">
-    <!-- Partners logos and scroll code here -->
-</section>
-
-<!-- Footer Section -->
-<footer>
-    <div class="footer-logo">Your Logo</div>
-    <p id="copyright">Copyright © 2024 Développé par Lucas Batier - Designé par Nicolas Carras et Lucas Batier</p>
-    <button class="primary-button">Nous contacter</button>
-</footer>
-
-<script src="script.js"></script>
-
+<div id="desktop-view">
+    <header>
+        <button id="header-logo" class="border">LOGO</button>
+        <nav>
+            <a class="border" href="#lineup">Groupes</a>
+            <a class="border" href="#host">Héberger</a>
+            <a class="border" href="#activities">Festival</a>
+            <a class="border" href="#news">Actualités</a>
+        </nav>
+        <button id="header-button" class="border">
+            <h1 data-text="Réserver maintenant">Réserver maintenant</h1>
+        </button>
+    </header>
+    <section id="hero">
+        <div id="hero-picture" class="border">Festival de danses et musiques du Monde</div>
+        <div id="hero-side">
+            <div id="hero-logo" class="border">LOGO</div>
+            <div id="hero-date" class="border"><h2 data-text="10 au 15 Juillet">10 au 15 Juillet</h2></div>
+            <div id="hero-location" class="border"><h2 data-text="Château de Montseveroux">Château de Montseveroux</h2></div>
+        </div>
+    </section>
+</div>
 </body>
 </html>
