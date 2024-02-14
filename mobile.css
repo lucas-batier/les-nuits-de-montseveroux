@@ -1,3 +1,7 @@
+#mobile-view {
+    font-size: 13px;
+}
+
 #mobile-view header {
     display: flex;
 }
@@ -10,12 +14,12 @@
 }
 
 #mobile-view header #burger-menu {
-    padding: 24px;
+    padding: 32px;
 }
 
 #mobile-view header #header-button {
     flex: 1;
-    padding: 24px 12px;
+    padding: 12px 24px;
 }
 
 #mobile-view #hero {
@@ -41,11 +45,13 @@
 #mobile-view #hero #hero-picture {
     height: 100%;
     width: 25vw;
+    background: url(hero-picture.jpg) no-repeat center;
+    background-size: cover;
 }
 
 #mobile-view #hero #hero-side * {
     width: 100%;
-    padding: 24px;
+    padding: 12px 24px;
 }
 
 #mobile-view #hero #hero-side #hero-title {

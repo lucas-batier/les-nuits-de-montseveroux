@@ -1,11 +1,21 @@
 #desktop-view h1:hover {
-    text-shadow: 4px 4px 0 var(--black);
-    transform: translate(-2px, -2px);
+    text-shadow: 5px 5px 0 var(--black);
+    transform: translate(-1px, -1px);
 }
 
 #desktop-view h1:active {
     text-shadow: none;
-    transform: none;
+    transform: translate(3px, 3px);
+}
+
+#desktop-view a span:hover {
+    text-shadow: 3px 3px 0 var(--black);
+    transform: translate(-1px, -1px);
+}
+
+#desktop-view a span:active {
+    text-shadow: none;
+    transform: translate(1px, 1px);
 }
 
 #desktop-view header {
@@ -27,14 +37,15 @@
 }
 
 #desktop-view header nav a {
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 #desktop-view header #header-button {
-    width: 19vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    width: 25vw;
+    min-width: 350px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 #desktop-view #hero {
@@ -54,17 +65,19 @@
 #desktop-view #hero #hero-picture {
     flex: 1;
     height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(hero-picture.jpg) no-repeat center;
+    background-size: cover;
 }
 
 #desktop-view #hero #hero-side {
     flex-direction: column;
     height: 100%;
-    width: 19vw;
+    width: 25vw;
+    min-width: 350px;
 }
 
 #desktop-view #hero #hero-side * {
     width: 100%;
-    padding: 2vw;
 }
 
 #desktop-view #hero #hero-side #hero-logo {

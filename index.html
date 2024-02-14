@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <style>
         /* Desktop styles */
-        @media screen and (min-width: 769px) {
+        @media screen and (min-width: 1025px) {
             #mobile-view {
                 display: none;
             }
@@ -15,7 +15,7 @@
         }
 
         /* Mobile styles */
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1024px) {
             #mobile-view {
                 display: block;
             }
@@ -45,7 +45,9 @@
         <div id="hero-side">
             <div id="hero-title" class="border">
                 <div id="hero-logo">LOGO</div>
-                <div id="hero-tagline">Festival de danses et musiques du Monde</div>
+                <div id="hero-tagline">
+                    <h2 data-text="Festival de danses et musiques du Monde">Festival de danses et musiques du Monde</h2>
+                </div>
             </div>
             <div id="hero-date" class="border">
                 <h2 data-text="10 au 15 Juillet">10 au 15 Juillet</h2>
@@ -62,21 +64,24 @@
     <header>
         <button id="header-logo" class="border">LOGO</button>
         <nav>
-            <a class="border" href="#lineup">Groupes</a>
-            <a class="border" href="#host">Héberger</a>
-            <a class="border" href="#activities">Festival</a>
-            <a class="border" href="#news">Actualités</a>
+            <a class="border" href="#lineup"><span data-text="Groupes">Groupes</span></a>
+            <a class="border" href="#host"><span data-text="Héberger">Héberger</span></a>
+            <a class="border" href="#activities"><span data-text="Festival">Festival</span></a>
+            <a class="border" href="#news"><span data-text="Actualités">Actualités</span></a>
         </nav>
         <button id="header-button" class="border">
             <h1 data-text="Réserver maintenant">Réserver maintenant</h1>
         </button>
     </header>
     <section id="hero">
-        <div id="hero-picture" class="border">Festival de danses et musiques du Monde</div>
+        <div id="hero-picture" class="border">
+            <h2 data-text="Festival de danses et musiques du Monde">Festival de danses et musiques du Monde</h2>
+        </div>
         <div id="hero-side">
             <div id="hero-logo" class="border">LOGO</div>
             <div id="hero-date" class="border"><h2 data-text="10 au 15 Juillet">10 au 15 Juillet</h2></div>
-            <div id="hero-location" class="border"><h2 data-text="Château de Montseveroux">Château de Montseveroux</h2></div>
+            <div id="hero-location" class="border"><h2 data-text="Château de Montseveroux">Château de Montseveroux</h2>
+            </div>
         </div>
     </section>
 </div>
