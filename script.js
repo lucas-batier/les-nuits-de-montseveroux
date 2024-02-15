@@ -1,16 +1,15 @@
-function automatedScrollingText() {
-    const viewportWidth = window.innerWidth;
+const burgerMenu = document.querySelector("#burger-menu");
 
-    $('.scroll-text').each(function () {
-        const textWidth = $(this).children().children()[0].clientWidth;
-        const numberOfCopies = Math.ceil(viewportWidth / textWidth);
+const mobileNavigationMenu = document.querySelector("#mobile-navigation-menu");
+const mobileNavigationMenuLinks = document.querySelectorAll("#mobile-navigation-menu a");
 
-        const text = Array.from({length: numberOfCopies}, () => $(this).children().children().html()).join('');
-        $(this).html('<div><span>' + text + '</span><span>' + text + '</span>')
-        // $(this).html(text);
+burgerMenu.addEventListener("click", () => {
+    burgerMenu.classList.toggle("active");
+    mobileNavigationMenu.classList.toggle("active");
+});
+mobileNavigationMenuLinks.forEach(function (mobileNavigationMenuLink) {
+    mobileNavigationMenuLink.addEventListener("click", () => {
+        burgerMenu.classList.remove("active");
+        mobileNavigationMenu.classList.remove("active");
     });
-}
-
-$(window).on('load', function () {
-    automatedScrollingText();
 });

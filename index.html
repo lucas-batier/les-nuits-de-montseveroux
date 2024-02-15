@@ -29,13 +29,24 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="desktop.css">
+    <script src="script.js" defer></script>
     <title>Les Nuits de Montseveroux | 10 au 15 Juillet 2024</title>
 </head>
 <body>
 <div id="mobile-view">
+    <nav id="mobile-navigation-menu" class="border">
+        <a href="#lineup"><span data-text="Groupes">Groupes</span></a>
+        <a href="#host"><span data-text="Héberger">Héberger</span></a>
+        <a href="#activities"><span data-text="Festival">Festival</span></a>
+        <a href="#news"><span data-text="Actualités">Actualités</span></a>
+    </nav>
     <header>
         <button id="burger-menu" class="border">
-            <img src="icons/burger-menu.svg" alt="Burger menu icon">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
         </button>
         <button id="header-button" class="border">
             <h1 data-text="Réserver maintenant">Réserver maintenant</h1>
