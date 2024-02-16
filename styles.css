@@ -8,7 +8,6 @@ html, body {
 
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-size: 16px;
     font-weight: 500;
     font-style: normal;
     font-variation-settings: "slnt" 0;
@@ -24,7 +23,7 @@ h1 {
     font-weight: 800;
     text-transform: uppercase;
     color: var(--white);
-    text-shadow: 4px 4px 0 var(--black);
+    text-shadow: 0.35rem 0.35rem 0 var(--black);
     position: relative;
 }
 
@@ -34,7 +33,7 @@ h1:before {
     position: absolute;
     z-index: -1;
 
-    -webkit-text-stroke: 6px var(--black);
+    -webkit-text-stroke: 0.5rem var(--black);
 }
 
 h2 {
@@ -44,7 +43,7 @@ h2 {
     text-decoration: none;
 
     color: var(--white);
-    text-shadow: 4px 4px 0 var(--black);
+    text-shadow: 0.35rem 0.35rem 0 var(--black);
     position: relative;
 
     transform: translate(0, 0); /* Use to make work the stroke */
@@ -56,7 +55,7 @@ h2:before {
     position: absolute;
     z-index: -1;
 
-    -webkit-text-stroke: 6px var(--black);
+    -webkit-text-stroke: 0.5rem var(--black);
 }
 
 a {
@@ -67,7 +66,7 @@ a {
     text-decoration: none;
 
     color: var(--white);
-    text-shadow: 2px 2px 0 var(--black);
+    text-shadow: 0.2rem 0.2rem 0 var(--black);
     position: relative;
 
     background-color: var(--secondary-main);
@@ -81,7 +80,7 @@ a span:before {
     position: absolute;
     z-index: -1;
 
-    -webkit-text-stroke: 4px var(--black);
+    -webkit-text-stroke: 0.25rem var(--black);
 }
 
 button {
@@ -108,14 +107,14 @@ header {
 .burger-icon {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 0.25rem;
 }
 .burger-icon span {
-    height: 4px;
-    width: 20px;
+    height: 0.25rem;
+    width: 2rem;
     background-color: var(--white);
-    border: 2px solid var(--black);
-    box-shadow: 2px 2px 0 var(--black);
+    border: 0.2rem solid var(--black);
+    box-shadow: 0.2rem 0.2rem 0 var(--black);
     transition: .3s ease;
 }
 
