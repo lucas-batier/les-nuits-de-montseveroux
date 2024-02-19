@@ -92,6 +92,10 @@ header {
     position: sticky;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 .border {
     box-sizing: border-box;
     border: 1px solid var(--black);
