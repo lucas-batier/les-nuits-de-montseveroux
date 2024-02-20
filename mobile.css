@@ -2,7 +2,7 @@
     font-size: 24px;
 }
 
-#mobile-view  #mobile-navigation-menu {
+#mobile-view #mobile-navigation-menu {
     background-color: var(--secondary-main);
     height: calc(100vh - 8rem);
     width: 100vw;
@@ -15,15 +15,18 @@
     text-align: center;
     z-index: 1200;
 }
-#mobile-view  #mobile-navigation-menu.active {
+
+#mobile-view #mobile-navigation-menu.active {
     display: flex;
 }
-#mobile-view  #mobile-navigation-menu a {
+
+#mobile-view #mobile-navigation-menu a {
     width: 100%;
     padding: 2rem 0;
     border-bottom: 0.1rem solid var(--black);
 }
-#mobile-view  #mobile-navigation-menu a:nth-child(1) {
+
+#mobile-view #mobile-navigation-menu a:nth-child(1) {
     border-top: 0.1rem solid var(--black);
 }
 
@@ -34,14 +37,17 @@
 
 #mobile-view header #header-button {
     flex: 1;
+    background-color: var(--primary-main);
 }
 
 #mobile-view header #burger-menu {
-    aspect-ratio : 1 / 1;
+    aspect-ratio: 1 / 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--primary-main);
 }
+
 #mobile-view header #burger-menu.active {
     background-color: var(--secondary-main);
 }
@@ -82,9 +88,46 @@
     flex: 1;
     flex-direction: column;
     height: 100%;
+    background-color: var(--primary-main);
 }
 
 #mobile-view #hero #hero-side #hero-title #hero-logo {
     flex: 1;
     height: 100%;
+}
+
+#mobile-view .group-country {
+    height: 16rem;
+    background-size: cover;
+    background-position: center;
+}
+
+#mobile-view .group-country h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+    flex: 1;
+    height: 100%;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#mobile-view .group-name h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+
+#mobile-view .group-picture {
+    aspect-ratio: 1 / 1;
+    background-position: center;
+    background-size: cover;
+}
+
+#mobile-view .group-description {
+    padding: 2rem;
 }

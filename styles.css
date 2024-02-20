@@ -15,7 +15,8 @@ html, body {
     padding: 0;
     margin: 0;
     width: 100vw;
-    background-color: var(--primary-main);
+    background-color: var(--secondary-main);
+    color: var(--secondary-contrast-text);
 }
 
 h1 {
@@ -25,6 +26,8 @@ h1 {
     color: var(--white);
     text-shadow: 0.35rem 0.35rem 0 var(--black);
     position: relative;
+
+    transform: translate(0, 0); /* Use to make work the stroke with background */
 }
 
 h1:before {
@@ -46,7 +49,7 @@ h2 {
     text-shadow: 0.35rem 0.35rem 0 var(--black);
     position: relative;
 
-    transform: translate(0, 0); /* Use to make work the stroke */
+    transform: translate(0, 0); /* Use to make work the stroke with background */
 }
 
 h2:before {
@@ -69,7 +72,7 @@ a {
     text-shadow: 0.2rem 0.2rem 0 var(--black);
     position: relative;
 
-    background-color: var(--secondary-main);
+    background-color: var(--primary-main);
 
     transform: translate(0, 0); /* Use to make work the stroke */
 }
@@ -98,7 +101,7 @@ header {
 
 .border {
     box-sizing: border-box;
-    border: 1px solid var(--black);
+    border: 0.1rem solid var(--black);
 }
 
 .black-layer {
@@ -113,6 +116,7 @@ header {
     flex-direction: column;
     gap: 0.25rem;
 }
+
 .burger-icon span {
     height: 0.25rem;
     width: 2rem;
@@ -120,14 +124,4 @@ header {
     border: 0.2rem solid var(--black);
     box-shadow: 0.2rem 0.2rem 0 var(--black);
     transition: .3s ease;
-}
-
-#hero #hero-side #hero-date {
-    color: var(--secondary-contrast-text);
-    background-color: var(--secondary-main);
-}
-
-#hero #hero-side #hero-location {
-    color: var(--secondary-contrast-text);
-    background-color: var(--secondary-main);
 }

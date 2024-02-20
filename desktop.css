@@ -34,18 +34,18 @@
 
 #desktop-view header #header-logo {
     flex: 1;
+    background-color: var(--primary-main);
 }
 
 #desktop-view header nav a {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 0 1.5rem;
 }
 
 #desktop-view header #header-button {
     width: 25vw;
     min-width: 350px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 0 1.5rem;
+    background-color: var(--primary-main);
 }
 
 #desktop-view #hero {
@@ -83,4 +83,5 @@
 #desktop-view #hero #hero-side #hero-logo {
     flex: 1;
     height: 100%;
+    background-color: var(--primary-main);
 }
