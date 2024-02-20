@@ -91,6 +91,13 @@
     background-color: var(--primary-main);
 }
 
+#mobile-view #hero #hero-side #hero-title h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 #mobile-view #hero #hero-side #hero-title #hero-logo {
     flex: 1;
     height: 100%;
