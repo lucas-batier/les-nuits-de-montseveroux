@@ -13,5 +13,6 @@ mobileNavigationMenuLinks.forEach(function (mobileNavigationMenuLink) {
     mobileNavigationMenuLink.addEventListener("click", () => {
         burgerMenu.classList.remove("active");
         mobileNavigationMenu.classList.remove("active");
+        body.classList.remove("no-scroll");
     });
 });
