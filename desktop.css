@@ -106,9 +106,11 @@
     background-size: cover;
     background-position: center;
     cursor: pointer;
+    height: 8rem;
 }
 
 #desktop-view #lineup #group-container div .group-header .group-title {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,16 +119,34 @@
 }
 
 #desktop-view #lineup #group-container div .group-header .group-title h1 {
-    height: 100%;
-    width: 100%;
 
     font-size: 1.5rem;
 
-    padding: 3rem 1rem;
+    padding: 1rem;
     margin: 0;
 }
 
 #desktop-view #lineup #group-container div .group-picture {
     background-size: cover;
     background-position: center;
+    height: calc(100% - 8rem);
+}
+
+#desktop-view #lineup #group-container div .group-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    height: calc(100% - 8rem);
+}
+
+#desktop-view #lineup #group-container div .group-name h2 {
+    font-size: 1.5rem;
+
+    transform: rotate(-90deg);
+}
+
+#desktop-view #lineup #group-container div .group-description {
+    padding: 1rem;
+    min-height: 640px;
 }

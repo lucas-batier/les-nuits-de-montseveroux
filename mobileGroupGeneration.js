@@ -1,10 +1,8 @@
 import {groups} from "./groups";
 
 function createGroup(groups) {
-    // Get the container element
     var container = document.getElementById("lineup");
 
-    // Use map to create an array of HTML strings
     var Groups = groups.map(function (group) {
         return (
             ` <div>` +
@@ -23,7 +21,6 @@ function createGroup(groups) {
         )
     }).join("");
 
-    // Insert the HTML string into the container
     container.innerHTML = Groups;
 }
 
