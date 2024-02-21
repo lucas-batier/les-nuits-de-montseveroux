@@ -88,12 +88,12 @@
 
 #desktop-view #lineup #group-container {
     display: flex;
-    width: 100%;
 }
 
 #desktop-view #lineup #group-container div {
     flex: 1;
     transition: .3s ease;
+    overflow: hidden;
 }
 
 #desktop-view #lineup #group-container div:hover, #desktop-view #lineup #group-container .selected {
@@ -119,6 +119,8 @@
 #desktop-view #lineup #group-container div .group-header .group-title h1 {
     height: 100%;
     width: 100%;
+
+    font-size: 1.5rem;
 
     padding: 3rem 1rem;
     margin: 0;
