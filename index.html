@@ -34,7 +34,8 @@
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="desktop.css">
     <script src="burgerMenuManagement.js" defer></script>
-    <script src="groupGeneration.js" defer></script>
+    <script src="mobileGroupGeneration.js" defer></script>
+    <script src="desktopGroupGeneration.js" defer></script>
     <title>Les Nuits de Montseveroux | 10 au 15 Juillet 2024</title>
 </head>
 <body>
@@ -74,31 +75,7 @@
         </div>
         <div id="hero-picture" class="border"></div>
     </section>
-    <section id="lineup">
-        <div>
-            <div class="group-country border" style="background-image: url('hero-picture.jpg')">
-                <div class="group-country-content"><h1 data-text="Pérou" >Pérou</h1></div>
-            </div>
-            <div class="group-name border">
-                <h2 data-text="Danzas del Peru">Danzas del Peru</h2>
-            </div>
-            <div class="group-picture border" style="background-image: url('hero-picture.jpg')"></div>
-            <div class="group-description border">
-                Danzas del Perú, fondé en 2005, est un groupe de danse péruvien renommé, dédié à la préservation et à la
-                promotion des traditions culturelles du Pérou à travers l'art de la danse. Avec une histoire riche, le
-                groupe a émergé de la passion commune de ses membres pour la préservation du patrimoine culturel
-                péruvien. Le groupe se distingue par ses performances dynamiques qui retracent l'histoire du Pérou,
-                depuis les anciennes civilisations incas jusqu'à l'époque contemporaine. Leurs chorégraphies captivantes
-                intègrent des éléments traditionnels tels que la marinera, la huayno, et la cueca, offrant une
-                expérience artistique immersive. Au fil des années, Danzas del Perú a participé à de nombreux festivals
-                nationaux et internationaux, recevant des éloges pour sa créativité et son engagement envers la
-                préservation culturelle. En tant que groupe artistique, ils s'efforcent de transcender les frontières
-                géographiques en partageant la richesse et la diversité de la culture péruvienne à travers des
-                spectacles qui émerveillent et éduquent le public.
-            </div>
-            <div class="group-picture border" style="background-image: url('hero-picture.jpg')"></div>
-        </div>
-    </section>
+    <section id="lineup"></section>
 </div>
 
 <div id="desktop-view">
@@ -123,6 +100,34 @@
             <div id="hero-date" class="border"><h2 data-text="10 au 15 Juillet">10 au 15 Juillet</h2></div>
             <div id="hero-location" class="border">
                 <h2 data-text="Château de Montseveroux">Château de Montseveroux</h2>
+            </div>
+        </div>
+    </section>
+    <section id="lineup">
+        <div id="group-container">
+            <div class="selected">
+                <div class="group-header border" style="background-image: url('${group.flagImage}')">
+                    <div class="group-title"><h1 data-text="${group.location}">${group.location}</h1></div>
+                </div>
+                <div class="group-picture border" style="background-image: url('${group.picture}')"></div>
+            </div>
+            <div>
+                <div class="group-header border" style="background-image: url('${group.flagImage}')">
+                    <div class="group-title"><h1 data-text="${group.location}">${group.location}</h1></div>
+                </div>
+                <div class="group-picture border" style="background-image: url('${group.picture}')"></div>
+            </div>
+            <div>
+                <div class="group-header border" style="background-image: url('${group.flagImage}')">
+                    <div class="group-title"><h1 data-text="${group.location}">${group.location}</h1></div>
+                </div>
+                <div class="group-picture border" style="background-image: url('${group.picture}')"></div>
+            </div>
+            <div>
+                <div class="group-header border" style="background-image: url('${group.flagImage}')">
+                    <div class="group-title"><h1 data-text="${group.location}">${group.location}</h1></div>
+                </div>
+                <div class="group-picture border" style="background-image: url('${group.picture}')"></div>
             </div>
         </div>
     </section>

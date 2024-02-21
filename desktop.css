@@ -85,3 +85,46 @@
     height: 100%;
     background-color: var(--primary-main);
 }
+
+#desktop-view #lineup #group-container {
+    display: flex;
+    width: 100%;
+}
+
+#desktop-view #lineup #group-container div {
+    flex: 1;
+    transition: .3s ease;
+}
+
+#desktop-view #lineup #group-container div:hover, #desktop-view #lineup #group-container .selected {
+    flex: 1.5;
+    background-color: transparent;
+}
+
+#desktop-view #lineup #group-container div .group-header {
+    background-image: url("images/groups/peru/peru-flag.png");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+#desktop-view #lineup #group-container div .group-header .group-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#desktop-view #lineup #group-container div .group-header .group-title h1 {
+    height: 100%;
+    width: 100%;
+
+    padding: 3rem 1rem;
+    margin: 0;
+}
+
+#desktop-view #lineup #group-container div .group-picture {
+    background-size: cover;
+    background-position: center;
+}

@@ -27,6 +27,8 @@ h1 {
     text-shadow: 0.35rem 0.35rem 0 var(--black);
     position: relative;
 
+    transition: .1s ease;
+
     transform: translate(0, 0); /* Use to make work the stroke with background */
 }
 
@@ -44,7 +46,6 @@ h2 {
     font-weight: 700;
     font-style: italic;
     text-decoration: none;
-
     color: var(--white);
     text-shadow: 0.35rem 0.35rem 0 var(--black);
     position: relative;
@@ -62,17 +63,20 @@ h2:before {
 }
 
 a {
-    font-size: 1rem;
-    font-weight: 500;
-
-    text-transform: uppercase;
     text-decoration: none;
 
+    background-color: var(--primary-main);
+}
+
+a span {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
     color: var(--white);
     text-shadow: 0.2rem 0.2rem 0 var(--black);
     position: relative;
 
-    background-color: var(--primary-main);
+    transition: .1s ease;
 
     transform: translate(0, 0); /* Use to make work the stroke */
 }
