@@ -66,6 +66,8 @@ a {
     text-decoration: none;
 
     background-color: var(--primary-main);
+
+    padding: 0 !important;
 }
 
 a span {
@@ -77,6 +79,8 @@ a span {
     position: relative;
 
     transition: .1s ease;
+
+    padding: 1.5rem;
 
     transform: translate(0, 0); /* Use to make work the stroke */
 }
@@ -93,6 +97,7 @@ a span:before {
 button {
     cursor: pointer;
     background: none;
+    padding: 0 !important;
 }
 
 header {

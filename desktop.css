@@ -86,22 +86,22 @@
     background-color: var(--primary-main);
 }
 
-#desktop-view #lineup #group-container {
+#desktop-view #desktop-lineup {
     display: flex;
 }
 
-#desktop-view #lineup #group-container div {
+#desktop-view #desktop-lineup div {
     flex: 1;
     transition: .3s ease;
     overflow: hidden;
 }
 
-#desktop-view #lineup #group-container div:hover, #desktop-view #lineup #group-container .selected {
+#desktop-view #desktop-lineup div:hover, #desktop-view #desktop-lineup .selected {
     flex: 1.5;
     background-color: transparent;
 }
 
-#desktop-view #lineup #group-container div .group-header {
+#desktop-view #desktop-lineup div .group-header {
     background-image: url("images/groups/peru/peru-flag.png");
     background-size: cover;
     background-position: center;
@@ -109,7 +109,7 @@
     height: 8rem;
 }
 
-#desktop-view #lineup #group-container div .group-header .group-title {
+#desktop-view #desktop-lineup div .group-header .group-title {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -118,17 +118,23 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-#desktop-view #lineup #group-container div .group-header .group-title h1 {
+#desktop-view #desktop-lineup div .group-header .group-title h1 {
     font-size: 1.5rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-#desktop-view #lineup #group-container div .group-picture {
+#desktop-view #desktop-lineup div .group-picture {
     background-size: cover;
     background-position: center;
     height: calc(100% - 8rem);
 }
 
-#desktop-view #lineup #group-container div .group-name {
+#desktop-view #desktop-lineup div .group-name {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,13 +142,14 @@
     height: calc(100% - 8rem);
 }
 
-#desktop-view #lineup #group-container div .group-name h2 {
+#desktop-view #desktop-lineup div .group-name h2 {
     font-size: 1.5rem;
 
     transform: rotate(-90deg);
+    white-space: nowrap;
 }
 
-#desktop-view #lineup #group-container div .group-description {
+#desktop-view #desktop-lineup div .group-description {
     padding: 1rem;
     min-height: 640px;
 }

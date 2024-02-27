@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <style>
         /* Desktop styles */
-        @media screen and (min-width: 1025px) {
+        @media screen and (min-width: 1023px) {
             #mobile-view {
                 display: none;
             }
@@ -33,15 +33,15 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="desktop.css">
-    <script src="burgerMenuManagement.js" defer></script>
-    <script src="mobileGroupGeneration.js" defer></script>
-    <script src="desktopGroupGeneration.js" defer></script>
     <title>Les Nuits de Montseveroux | 10 au 15 Juillet 2024</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="burgerMenuManagement.js" defer></script>
+    <script src="groupGeneration.js" defer></script>
 </head>
 <body>
 <div id="mobile-view">
     <nav id="mobile-navigation-menu" class="border">
-        <a href="#lineup"><span data-text="Groupes">Groupes</span></a>
+        <a href="#mobile-lineup"><span data-text="Groupes">Groupes</span></a>
         <a href="#host"><span data-text="Héberger">Héberger</span></a>
         <a href="#activities"><span data-text="Festival">Festival</span></a>
         <a href="#news"><span data-text="Actualités">Actualités</span></a>
@@ -75,14 +75,14 @@
         </div>
         <div id="hero-picture" class="border"></div>
     </section>
-    <section id="lineup"></section>
+    <section id="mobile-lineup"></section>
 </div>
 
 <div id="desktop-view">
     <header>
         <a id="header-logo" class="border" href="">LOGO</a>
         <nav>
-            <a class="border" href="#lineup"><span data-text="Groupes">Groupes</span></a>
+            <a class="border" href="#desktop-lineup"><span data-text="Groupes">Groupes</span></a>
             <a class="border" href="#host"><span data-text="Héberger">Héberger</span></a>
             <a class="border" href="#activities"><span data-text="Festival">Festival</span></a>
             <a class="border" href="#news"><span data-text="Actualités">Actualités</span></a>
@@ -103,32 +103,18 @@
             </div>
         </div>
     </section>
-    <section id="lineup">
-        <div id="group-container">
-            <div class="selected">
-                <div class="group-header border" style="background-image: url('${group.flagImage}')">
-                    <div class="group-title"><h1 data-text="${group.location}">${group.location}</h1></div>
-                </div>
-                <div class="group-picture border" style="background-image: url('${group.picture}')"></div>
-            </div>
-            <div>
-                <div class="group-header border" style="background-image: url('${group.flagImage}')">
-                    <div class="group-title"><h1 data-text="${group.location}">${group.location}</h1></div>
-                </div>
-                <div class="group-name border"><h2 data-text="${group.name}">${group.name}</h2></div>
-            </div>
-            <div>
-                <div class="group-header border" style="background-image: url('${group.flagImage}')">
-                    <div class="group-title"><h1 data-text="${group.location}">${group.location}</h1></div>
-                </div>
-                <div class="group-description border">${group.description}</div>
-            </div>
-            <div>
-                <div class="group-header border" style="background-image: url('${group.flagImage}')">
-                    <div class="group-title"><h1 data-text="${group.location}">${group.location}</h1></div>
-                </div>
-                <div class="group-picture border" style="background-image: url('${group.locationImage}')"></div>
-            </div>
+    <section id="desktop-lineup">
+        <div>
+            <div class="header"></div>
+        </div>
+        <div>
+            <div class="header"></div>
+        </div>
+        <div>
+            <div class="header"></div>
+        </div>
+        <div>
+            <div class="header"></div>
         </div>
     </section>
 </div>
